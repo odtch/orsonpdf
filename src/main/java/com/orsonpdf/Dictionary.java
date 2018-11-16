@@ -44,6 +44,7 @@ import java.util.Map;
  * which is treated as a special case (to ensure it comes first in the output 
  * if it is specified).
  */
+@SuppressWarnings({"rawtypes","unchecked"})
 public class Dictionary {
     
     /** 
@@ -54,7 +55,7 @@ public class Dictionary {
     private String type;
     
     /** Data storage. */
-    private Map map;
+	private Map map;
 
     /**
      * Creates a new instance with no type.

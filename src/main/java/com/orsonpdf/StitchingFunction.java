@@ -35,11 +35,12 @@ package com.orsonpdf;
 /**
  * A stitching function.
  */
+@SuppressWarnings("unused")
 public final class StitchingFunction extends Function {
     
     private Function[] functions;
-    
-    private float[] bounds;
+        
+	private float[] bounds;
     
     private float[] encode;
     

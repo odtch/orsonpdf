@@ -50,6 +50,7 @@ import java.util.Hashtable;
 /**
  * Utility methods for shapes and images.
  */
+@SuppressWarnings({"rawtypes","unchecked"})
 public class GraphicsUtils {
     
     private GraphicsUtils() {
@@ -133,7 +134,7 @@ public class GraphicsUtils {
      * 
      * @return A buffered image. 
      */
-    public static BufferedImage convertRenderedImage(RenderedImage img) {
+	public static BufferedImage convertRenderedImage(RenderedImage img) {
         if (img instanceof BufferedImage) {
             return (BufferedImage) img;	
         }
